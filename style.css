@@ -451,7 +451,7 @@ nav {
   }
   
   
-  .prev, .next {
+  .prev{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -465,6 +465,23 @@ nav {
     border-radius: 0 3px 3px 0;
     user-select: none;
     background: none;
+    transform: translateY(150px);
+  }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: none;
+    transform: translateY(150px);
   }
   
   .next {
@@ -573,7 +590,7 @@ footer {
 
 /* For phones and tablets */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     nav {
         height: 68px;
     }
@@ -586,7 +603,25 @@ footer {
     .language {
         width: calc(100% / 3);
     }
-    
+
+    .prev{
+        font-size: 18px;
+    }
+    .next {
+        font-size: 18px;
+    }
+
+    .timeline_component_right {
+        box-sizing: border-box;
+        width: calc(100% - 50px);  
+    }
+
+    .timeline_component_left {
+        box-sizing: border-box;
+        width: calc(20px + 100%);
+        transform: translateX(70px);
+    }
+
     .project_description_paragraph {
         font-size: 12px;
         display: flex;
